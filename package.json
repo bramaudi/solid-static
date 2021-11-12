@@ -1,0 +1,21 @@
+{
+  "name": "bramaudi-my-id",
+  "scripts": {
+    "dev": "solid-start dev",
+    "build": "solid-start build",
+    "export": "node export.js",
+    "start": "solid-start start"
+  },
+  "type": "module",
+  "devDependencies": {
+    "solid-app-router": "^0.1.9",
+    "solid-js": "^1.2.0",
+    "solid-meta": "^0.27.2",
+    "solid-start": "next",
+    "solid-start-node": "next",
+    "vite": "^2.6.12"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}
