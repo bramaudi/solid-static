@@ -14,7 +14,8 @@ serve.stdout.on('data', data => {
 	if (data.toString().match(/3000/)) {
 		spawnSync('wget', ['-P', 'static/', '-nH', '--html-extension', '-e', 'robots=off', '-r', 'localhost:3000']);
 		console.log('Done');
-		serve.kill();
-		process.exit(0)
+		if (serve.kill()) {
+			process.exit(0)
+		}
 	}
 })
